@@ -1,0 +1,44 @@
+html {
+  font-family: "Raleway", "Open Sans", sans-serif;
+}
+
+[class^="btn-"] {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 250px;
+  height: 80px;
+  text-transform: uppercase;
+  border: 1px solid red;
+  color: red;
+  text-align: center;
+  line-height: 80px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.btn-swipe:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
+  z-index: -1;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.btn-swipe:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.btn-swipe:hover:before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+/*# sourceMappingURL=styles.css.map */
